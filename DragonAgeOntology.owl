@@ -1,0 +1,2413 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Definition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Liscence -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Liscence"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeSeries"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Romancable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#isCharacterOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeSeries"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#isCharacterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#isCharacterOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeSeries"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Advisor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Advisor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CassandraPentaghast"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CullenRutherford"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JosephineMontilyet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Leliana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AlistairTheirin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AlistairTheirin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Royalty"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warden"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#isCharacterOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Altus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Altus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DorianPavus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Anders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Anders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Antiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Antiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JosephineMontilyet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ZevranArainai"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Arishok -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Arishok">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Assassin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Assassin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ZevranArainai"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AvelineVallen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AvelineVallen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CaptainOfTheGuard"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#BethanyHawke -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#BethanyHawke">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemaleElfPresentingPlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemaleElfPresentingPlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Romancable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Solas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingElfOrHumanPlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingElfOrHumanPlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Romancable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CullenRutherford"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Romancable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AlistairTheirin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Anders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Fenris"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Isabela"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JosephineMontilyet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Leliana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Merrill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#SebastianVael"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#TheIronBull"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#WardenBlackwall"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ZevranArainai"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Romancable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CassandraPentaghast"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DorianPavus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Fenris"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Isabela"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JosephineMontilyet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Leliana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Merrill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Morrigan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#TheIronBull"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ZevranArainai"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Romancable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AvelineVallen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#BethanyHawke"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CarverHawke"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Cole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Dog"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Oghren"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Shale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#VarricTethras"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Vivienne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Wynne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CaptainOfTheGuard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CaptainOfTheGuard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AvelineVallen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CarverHawke -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CarverHawke">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CassandraPentaghast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CassandraPentaghast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Advisor"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Nevarra"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Cole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Cole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rogue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CullenRutherford -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CullenRutherford">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Advisor"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingElfOrHumanPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Diplomat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Diplomat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JosephineMontilyet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Dog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Dog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#OfficialDog"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DorianPavus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DorianPavus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Altus"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mage"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Tevinter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#isCharacterOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeSeries"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AlistairTheirin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Anders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AvelineVallen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#BethanyHawke"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CarverHawke"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CassandraPentaghast"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CullenRutherford"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Fenris"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Isabela"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Merrill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#SebastianVael"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#VarricTethras"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ZevranArainai"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeSeries"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AlistairTheirin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CassandraPentaghast"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Cole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CullenRutherford"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DorianPavus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JosephineMontilyet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Leliana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Morrigan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Solas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#TheIronBull"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#VarricTethras"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Vivienne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#WardenBlackwall"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ZevranArainai"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeSeries"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AlistairTheirin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CullenRutherford"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Dog"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Isabela"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Leliana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Merrill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Morrigan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Oghren"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Shale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Wynne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ZevranArainai"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeSeries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeSeries"/>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Fenris -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Fenris">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Tevinter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AlistairTheirin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Anders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AvelineVallen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#BethanyHawke"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CarverHawke"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Cole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CullenRutherford"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Dog"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Merrill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Morrigan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Wynne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#FreeMarches -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#FreeMarches">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#SebastianVael"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#VarricTethras"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Isabela -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Isabela">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rogue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rivain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JosephineMontilyet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JosephineMontilyet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Advisor"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Diplomat"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Antiva"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Leliana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Leliana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Advisor"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rogue"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#SpyMaster"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Orlais"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Anders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#BethanyHawke"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DorianPavus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Merrill"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Morrigan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Vivienne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Wynne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mercenary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mercenary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#TheIronBull"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Merrill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Merrill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Morrigan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Morrigan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#isCharacterOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Nevarra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Nevarra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CassandraPentaghast"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#OfficialDog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#OfficialDog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Dog"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Oghren -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Oghren">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warden"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Orzammar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Orlais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Orlais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Leliana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Vivienne"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Orzammar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Orzammar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Oghren"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Shale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ParVollen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ParVollen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#TheIronBull"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rivain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rivain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Isabela"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rogue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rogue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Cole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Isabela"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Leliana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#SebastianVael"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#VarricTethras"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ZevranArainai"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Romancable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Romancable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Royalty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Royalty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AlistairTheirin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#SebastianVael -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#SebastianVael">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rogue"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Royalty"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#FreeMarches"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Seheron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Seheron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rogue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Shale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Shale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Orzammar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Seheron"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Solas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Solas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Unknown"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemaleElfPresentingPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#SpyMaster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#SpyMaster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Leliana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#VarricTethras"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Arishok"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Seheron"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Tevinter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Tevinter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DorianPavus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Fenris"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#TheIronBull -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#TheIronBull">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#isCharacterOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mercenary"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ParVollen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Unknown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Unknown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#PlaceOfOrigin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Solas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#VarricTethras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#VarricTethras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rogue"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#SpyMaster"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#FreeMarches"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#isCharacterOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Vivienne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Vivienne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Orlais"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AlistairTheirin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Oghren"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#WardenBlackwall"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#WardenBlackwall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#WardenBlackwall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warden"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#FreeMarches"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Warrior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#JobTitle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AlistairTheirin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#AvelineVallen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CarverHawke"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CassandraPentaghast"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#CullenRutherford"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Fenris"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Oghren"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Shale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Sten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#TheIronBull"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#hasCharacter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#WardenBlackwall"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Wynne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Wynne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Mage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Ferelden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByNoPlayerCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ZevranArainai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ZevranArainai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#HasJobOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Assassin"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Rogue"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsCharacterFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#Antiva"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#IsRomancableBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByFemalePresentingPlayerCharacter"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#ByMalePresentingPlayerCharacter"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#isCharacterOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAge2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeInquisition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/erinhatcher/ontologies/2019/1/untitled-ontology-5#DragonAgeGame_DragonAgeOrigins"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
